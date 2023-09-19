@@ -1,0 +1,42 @@
+.table {
+    width: 100%;
+    min-height: 90dvh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & h2 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    & h6 {
+        margin: 0;
+        font-size: 16px;
+    }
+    & p {
+        margin: 0;
+        font-size: 14px;
+    }
+    & table {
+        width: 90vw;
+        & td {
+            width: auto;
+            & tr {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    & div {
+        border: 1px solid rgba(0, 0, 0, 0.61);
+        margin-top: 3px;
+        width: calc(100% - 2px);
+
+        & p {
+            font-size: 16px;
+            margin: 2px;
+        }
+    }
+}
