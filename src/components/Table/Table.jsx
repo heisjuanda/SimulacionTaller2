@@ -4,7 +4,7 @@ export const Table = ({ tableName, configuration, testGenerator }) => {
   return (
     <section className="table">
       <article>
-        <table border="1">
+        <table>
           <caption>
             <h2>{tableName}</h2>
           </caption>
