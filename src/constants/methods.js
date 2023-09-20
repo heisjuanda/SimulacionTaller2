@@ -1,0 +1,1 @@
+export const CHI_CUADRADO = 'chiCuadrado';

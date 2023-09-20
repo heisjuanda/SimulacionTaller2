@@ -4,6 +4,7 @@ export const CalculateContext = createContext();
 
 const CalculateProvider = ({ children }) => {
   const [currentMethod, setCurrentMethod] = useState();
+  const [currentMethodResult, setCurrentMethodResult] = useState();
 
   window.scrollTo(0, 0);
 
@@ -11,8 +12,15 @@ const CalculateProvider = ({ children }) => {
     () => ({
       currentMethod,
       setCurrentMethod,
+      currentMethodResult,
+      setCurrentMethodResult,
     }),
-    [currentMethod, setCurrentMethod]
+    [
+      currentMethod,
+      setCurrentMethod,
+      currentMethodResult,
+      setCurrentMethodResult,
+    ]
   );
 
   return (
